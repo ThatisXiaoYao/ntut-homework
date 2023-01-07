@@ -8,9 +8,9 @@ int main(void) {
 
         fptr = fopen("welcome.txt","r");
         if(fptr != NULL){
-                while((ch = getc(fptr) != EOF){
+                while((ch = getc(fptr)) != EOF){
                         printf("%c", ch);
-                        count++;
+                        //count++;
                 }
                 fclose(fptr);
                 printf("\ntotal %d bit\n", count);
